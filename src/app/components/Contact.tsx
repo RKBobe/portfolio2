@@ -22,8 +22,8 @@ const contactLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/rkybeaubouef',
-    href: 'https://linkedin.com/in/rkybeaubouef',
+    value: 'linkedin.com/in/richardkylebeaubouef',
+    href: 'https://linkedin.com/in/richardkylebeaubouef',
     glow: 'from-blue-600/20 to-blue-400/20',
     shadowColor: 'shadow-blue-600/10'
   }

@@ -33,7 +33,7 @@ const projects = [
     title: "XactScope",
     description: "A specialized SaaS platform for insurance adjusters that uses AI to convert voice-dictated field notes into formatted Xactimate estimates. It automates the tedious lookup of selector codes and math calculations, allowing adjusters to complete administrative work directly from the inspection site. Features a secure subscription-based model and real-time report generation.",
     technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "OpenAI", "Stripe", "Clerk"],
-    liveUrl: "https://xactscope.vercel.app",
+    liveUrl: "https://xact-scope.vercel.app",
     githubUrl: "https://github.com/RKBobe/xact-scope",
     status: "Deployed",
     category: "Insurtech SaaS: AI Estimating Assistant",

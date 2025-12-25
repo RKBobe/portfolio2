@@ -1,17 +1,22 @@
 "use client";
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Rocket, Code2, Database, Globe, Zap, Waves } from 'lucide-react';
+import { ExternalLink, Github, Rocket, Code2, Database, Globe, Zap, Waves, FileText } from 'lucide-react';
 
 // Tech stack icons mapping
 const techIcons: { [key: string]: string } = {
   "React": "⚛️",
   "Node.js": "🟢",
+  "Next.js": "▲",
   "TypeScript": "🔷",
   "PostgreSQL": "🐘",
+  "Prisma": "💎",
   "Fly.io": "🚀",
   "Python": "🐍",
   "FastAPI": "⚡",
   "Google Gemini": "🤖",
+  "OpenAI": "🧠",
+  "Stripe": "💳",
+  "Clerk": "🔐",
   "HTML": "🌐",
   "CSS": "🎨",
   "JavaScript": "💛",
@@ -25,29 +30,46 @@ const techIcons: { [key: string]: string } = {
 
 const projects = [
   {
+    title: "XactScope",
+    description: "A specialized SaaS platform for insurance adjusters that uses AI to convert voice-dictated field notes into formatted Xactimate estimates. It automates the tedious lookup of selector codes and math calculations, allowing adjusters to complete administrative work directly from the inspection site. Features a secure subscription-based model and real-time report generation.",
+    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "OpenAI", "Stripe", "Clerk"],
+    liveUrl: "https://xactscope.vercel.app",
+    githubUrl: "https://github.com/RKBobe/xact-scope",
+    status: "Deployed",
+    category: "Insurtech SaaS: AI Estimating Assistant",
+    icon: FileText,
+    highlights: [
+      "Voice-to-Estimate AI processing pipeline",
+      "Automated Xactimate selector code mapping",
+      "Full subscription payment integration with Stripe",
+      "Secure authentication & user management via Clerk",
+      "Responsive dashboard with real-time data persistence"
+    ]
+  },
+  {
     title: "Cortex",
-    description: "A full-stack web application that provides a persistent, topic-based memory for conversations with large language models. This tool leverages a Retrieval-Augmented Generation (RAG) pipeline to dynamically pull relevant context from past conversations, uploaded documents, and entire GitHub repositories, ensuring accurate and contextually-aware AI responses. The application is containerized with Docker and deployed on Fly.io, featuring multi-user data isolation to provide each user with a private and secure workspace.",
+    description: "A full-stack web application that provides a persistent, topic-based memory for conversations with large language models. This tool leverages a Retrieval-Augmented Generation (RAG) pipeline to dynamically pull relevant context from past conversations, uploaded documents, and entire GitHub repositories, ensuring accurate and contextually-aware AI responses. The application is containerized with Docker and deployed on Fly.io.",
     technologies: ["Python", "Flask", "HTML/CSS", "JavaScript", "Google Gemini API", "Prompt Engineering", "ChromaDB (Vector Database)", "Docker", "Gunicorn", "Fly.io"],
     liveUrl: "https://cortex-tfu-ua.fly.dev",
     githubUrl: "https://github.com/RKBobe/cortex",
     status: "Deployed",
-    category: "AI Context Tool: A Multi-User RAG Application",
+    category: "AI Context Tool: Multi-User RAG App",
     icon: Code2,
     highlights: [
-      "Dynamic Context Retrieval",
-      "Multi-Source Ingestion, including GitHub Repositories",
+      "Dynamic Context Retrieval via RAG",
+      "Multi-Source Ingestion (Docs & GitHub Repos)",
       "Multi-User Architecture with Data Isolation",
       "Scalable cloud deployment on Fly.io",
-      "REST API to handle chat, ingestion, and user management logic"
+      "REST API for chat and ingestion logic"
     ]
   },
   {
     title: "Ripple",
     description: "Generate engaging social media posts from your articles using AI. Transform long-form content into compelling, platform-optimized posts that capture your audience's attention and amplify your message across social networks.",
     technologies: ["Python", "FastAPI", "Google Gemini", "HTML", "CSS", "JavaScript"],
-    liveUrl: "https://ripple-rho3.onrender.com", // Updated
-    githubUrl: "https://github.com/RKBobe/Ripple", // Updated
-    status: "Deployed", // Updated from "In Development"
+    liveUrl: "https://ripple-rho3.onrender.com",
+    githubUrl: "https://github.com/RKBobe/Ripple",
+    status: "Deployed",
     category: "Micro-SaaS",
     icon: Waves,
     highlights: [
